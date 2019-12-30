@@ -1,0 +1,88 @@
+@jd_Color: #e43130;
+@bj_Color: #f6f6f6;
+@color: #333; //a链接文字的颜色
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    .prefix(box-sizing, border-box);
+    // 移动端的控件 select 按钮 默认外观清除掉
+    .prefix(appearance, none);
+}
+
+a {
+    text-decoration: none;
+    color: @color;
+    .prefix(-tap-highlight-color, transparent);
+
+    &:hover {
+        color: @color;
+    }
+}
+body {
+    color: #666;
+    font-size: 14px;
+    background-color: @bj_Color;
+    font-family: "Microsoft YaHei", Helvetica, sans-serif;
+    padding-bottom: 1rem;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+input,
+textarea {
+    outline: none;
+    resize: none;
+}
+
+img {
+    border: none;
+}
+
+strong,
+b {
+    font-weight: normal;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.prefix(@attr, @val) {
+    @{attr}: @val;
+    -webkit-@{attr}: @val;
+    -moz-@{attr}: @val;
+    -ms-@{attr}: @val;
+    -o-@{attr}: @val;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.f-cb {
+    zoom: 1;
+
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+        font-size: 0;
+        line-height: 0;
+        visibility: hidden;
+    }
+}

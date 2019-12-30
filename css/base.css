@@ -1,0 +1,75 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  -tap-highlight-color: transparent;
+  -webkit--tap-highlight-color: transparent;
+  -moz--tap-highlight-color: transparent;
+  -ms--tap-highlight-color: transparent;
+  -o--tap-highlight-color: transparent;
+}
+a:hover {
+  color: #333;
+}
+body {
+  color: #666;
+  font-size: 14px;
+  background-color: #f6f6f6;
+  font-family: "Microsoft YaHei", Helvetica, sans-serif;
+  padding-bottom: 1.3rem;
+}
+ol,
+ul {
+  list-style: none;
+}
+input,
+textarea {
+  outline: none;
+  resize: none;
+}
+img {
+  border: none;
+}
+strong,
+b {
+  font-weight: normal;
+}
+em,
+i {
+  font-style: normal;
+}
+table {
+  border-collapse: collapse;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.f-cb {
+  zoom: 1;
+}
+.f-cb::after {
+  display: block;
+  content: "";
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+}
